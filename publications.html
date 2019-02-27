@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133493799-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-133493799-1');
+    </script>
+
+    <title>Courtney Napoles</title>
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/pace.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://use.fontawesome.com/6b0246c9cb.js"></script>
+
+    <!-- js -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pace.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/clipboard.min.js"></script>
+  </head>
+
+  <body id="page">
+    <script type="text/javascript">
+      $('.copy').tooltip({
+	  trigger: 'click',
+	  placement: 'bottom'
+      });
+
+      function setTooltip(btn, message) {
+	  btn.tooltip('hide')
+	      .attr('data-original-title', message)
+	      .tooltip('show');
+      }
+
+      function hideTooltip(btn) {
+	  setTimeout(function() {
+	      btn.tooltip('hide');
+	  }, 1000);
+      }
+
+      var clipboard = new ClipboardJS('.copy', {
+	  text: function(trigger) {
+	      var btn = $(trigger);
+	      setTooltip(btn, 'Copied');
+	      hideTooltip(btn);
+	      return trigger.previousElementSibling.innerHTML;
+	  }
+      });
+
+    </script>
+    <div class="container">
+      <header id="site-header">
+	<div class="row">
+	  <div class="col-md-5 col-sm-5 col-xs-8">
+	    <div class="logo">
+	      <h1><a href="index.html"><b>Courtney Napoles</b></a> &nbsp;<span style="font-family:tahoma, arial; font-size:18px; color:#666">/'n&aelig;p&#x0259;l&#618;s/</span></h1>
+	    </div>
+	  </div><!-- col-md-4 -->
+	  <div class="col-md-7 col-sm-7 col-xs-4">
+	    <nav class="main-nav" role="navigation">
+	      <div class="navbar-header">
+  		<button type="button" id="trigger-overlay" class="navbar-toggle">
+    		  <span class="ion-navicon"></span>
+  		</button>
+	      </div>
+
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  		<ul class="nav navbar-nav navbar-right">
+		  <li class="cl-effect-11"><a href="index.html" data-hover="Home">Home</a></li>
+    		  <li class="cl-effect-11"><a href="publications.html" data-hover="Publications">Publications</a></li>
+    		  <li class="cl-effect-11"><a href="cv.html" data-hover="CV">CV</a></li>
+    		  <li class="cl-effect-11"><a href="contact.html" data-hover="Contact">Contact</a></li>  								</ul>
+	      </div><!-- /.navbar-collapse -->
+	    </nav>
+
+	  </div><!-- col-md-8 -->
+	</div>
+      </header>
+    </div>
+
+    <div class="content-body">
+      <div class="container">
+	<div class="row">
+	  <main class="col-md-12">
+	    <h1 class="page-title">Publications</h1>
+	    <article class="post">
+	      <div class="entry-content clearfix">
+		<div class="panel-group" id="accordion21" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default"><div class="panel-heading" role="tab" id="headingOne">
+		      <h4>How do you correct run-on sentences it's not as easy as it seems
+		      </h4>
+		      Junchao Zheng, Courtney Napoles, Joel Tetreault, and Kostiantyn Omelianchuk<br/>
+		      The 4th Workshop on Noisy User-generated Text (WNUT)<br/>
+		      2018&nbsp;&nbsp;
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract21" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib21" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/wnut2018-run-ons.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		      <a href="https://github.com/cnap/smt-for-gec" target="_blank"><span class="label label-code">code</span></a>
+		    </div>
+		    <div id="abstract21" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion21"><div class="panel-body">
+			Run-on sentences are common grammatical mistakes but little research has tackled this problem to date. This work introduces two machine learning models to correct run-on sentences that outperform leading methods for related tasks, punctuation restoration and wholesentence grammatical error correction. Due to the limited annotated data for this error, we experiment with artificially generating training data from clean newswire text. Our findings suggest artificial training data is viable for this task. We discuss implications for correcting run-ons and other types of mistakes that have low coverage in error-annotated corpora.
+		    </div></div>
+		    <div id="bib21" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion21"><div class="panel-body" style="border-top:1px solid #ddd">
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt21">copy</span>
+			<pre id="bt21">
+@InProceedings{zheng-napoles-tetreault:2018:W-NUT2018,
+    author    = {Zheng, Junchao  and  Napoles, Courtney  and  Tetreault, Joel},
+    title     = {How do you correct run-on sentences it's not as easy as it seems},
+    booktitle = {Proceedings of the 2018 EMNLP Workshop W-NUT: The 4th Workshop on Noisy User-generated Text},
+    month     = {November},
+    year      = {2018},
+    address   = {Brussels, Belgium},
+    publisher = {Association for Computational Linguistics},
+    pages     = {33--38},
+    url       = {http://www.aclweb.org/anthology/W18-6105}
+}</pre>
+		</div></div></div></div>
+
+
+
+		<div class="panel-group" id="accordion20" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default"><div class="panel-heading" role="tab" id="headingOne">
+		      <h4>Systematically Adapting Machine Translation for Grammatical Error Correction
+		      </h4>
+		      Courtney Napoles and Chris Callison-Burch<br/>
+		      12th Workshop on Innovative Use of NLP for Building Educational Applications (BEA12)<br/>
+		      2017&nbsp;&nbsp;
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract20" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib20" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/bea2017-gec-smt.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		      <a href="https://github.com/cnap/smt-for-gec" target="_blank"><span class="label label-code">code</span></a>
+		    </div>
+		    <div id="abstract20" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion20"><div class="panel-body">
+			In this work we adapt machine translation (MT) to grammatical error correction, identifying how components of the statistical MT pipeline can be modified for this task and analyzing how each modification impacts system performance. We evaluate the contribution of each of these components with standard evaluation metrics and automatically characterize the morphological and lexical transformations made in system output. Our model rivals the current state of the art using a fraction of the training data.
+		    </div></div>
+		    <div id="bib20" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion20"><div class="panel-body" style="border-top:1px solid #ddd">
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt20">copy</span>
+			<pre id="bt20">
+@InProceedings{napoles-callisonburch:2017:BEA,
+    author    = {Napoles, Courtney  and  Callison-Burch, Chris},
+    title     = {Systematically Adapting Machine Translation for Grammatical Error Correction},
+    booktitle = {Proceedings of the 12th Workshop on Innovative Use of NLP for Building Educational Applications},
+    month     = {September},
+    year      = {2017},
+    address   = {Copenhagen, Denmark},
+    publisher = {Association for Computational Linguistics},
+    pages     = {345--356},
+    url       = {http://www.aclweb.org/anthology/W17-5039}
+}</pre>
+		</div></div></div></div>
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion19" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default"><div class="panel-heading" role="tab" id="headingOne">
+		      <h4>GEC into the future: Where are we going and how do we get there?
+		      </h4>
+
+		      Keisuke Sakaguchi, Courtney Napoles, and Joel Tetreault<br/>
+		      12th Workshop on Innovative Use of NLP for Building Educational Applications (BEA12)<br/>
+		      2017 &nbsp;&nbsp;
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract19" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib19" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/bea2017-gec-future.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		    </div>
+		    <div id="abstract19" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion19"><div class="panel-body">
+			The field of grammatical error correction (GEC) has made tremendous bounds in the last ten years, but new questions and obstacles are revealing themselves. In this position paper, we discuss the issues that need to be addressed and provide recommendations for the field to continue to make progress, and propose a new shared task. We invite suggestions and critiques from the audience to make the new shared task a community-driven venture.
+		    </div></div>
+		    <div id="bib19" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion19"><div class="panel-body" style="border-top:1px solid #ddd">
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt19">copy</span>
+			<pre id="bt19">
+@InProceedings{sakaguchi-napoles-tetreault:2017:BEA,
+    author    = {Sakaguchi, Keisuke  and  Napoles, Courtney  and  Tetreault, Joel},
+    title     = {GEC into the future: Where are we going and how do we get there?},
+    booktitle = {Proceedings of the 12th Workshop on Innovative Use of NLP for Building Educational Applications},
+    month     = {September},
+    year      = {2017},
+    address   = {Copenhagen, Denmark},
+    publisher = {Association for Computational Linguistics},
+    pages     = {180--187},
+    url       = {http://www.aclweb.org/anthology/W17-5019}
+}</pre>
+		</div></div></div></div>
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion18" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Automatically Identifying Good Conversations Online<br/>(Yes, They Do Exist!)</h4>
+
+		      <!-- AUTHORS -->
+		      Courtney Napoles, Aasish Pappu, and Joel Tetreault<br/>
+		      11th International AAAI Conference on Web and Social Media (ICWSM-17)<br/>
+		      2017&nbsp;&nbsp;
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract18" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib18" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/icwsm17-automatically.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		    </div>
+		    <div id="abstract18" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion18">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			Online news platforms curate high-quality content for their readers and, in many cases, users can post comments in response. While comment threads routinely contain unproductive banter, insults, or users shouting" over each other, there are often good discussions buried among the noise. In this paper, we define a new task of identifying "good" conversations, which we call ERICs&mdash;Engaging, Respectful, and/or Informative Conversations. Our model successfully identifies ERICs posted in response to online news articles with F1 = 0.73 and F1 = 0.91 in debate forums.
+		      </div>
+		    </div>
+	  	    <div id="bib18" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion18">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt18">copy</span>
+			<pre id="bt18">
+@inproceedings{napoles2017automatically,
+    title     = {Automatically Identifying Good Conversations Online (Yes, They Do Exist!)},
+    author    = {Napoles, Courtney and Pappu, Aasish and Tetreault, Joel},
+    booktitle = {Eleventh International AAAI Conference on Web and Social Media},
+    year      = {2017}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion17" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Finding Good Conversations Online: The Yahoo News Annotated Corpus</h4>
+
+		      <!-- AUTHORS -->
+		      Courtney Napoles, Joel Tetreault, Enrica Rosato, Brian Provenzale, and Aasish Pappu <br/>
+		      11th Linguistic Annotation Workshop (LAW-XI)<br/>
+		      2017&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract17" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib17" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/law2017-finding.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		      <!-- <a href="http://webscope.sandbox.yahoo.com/catalog.php?datatype=l&did=83" target="_blank"> -->
+			<a href="https://github.com/cnap/ynacc" target="_blank"><span class="label label-data">data</span></a>
+		    </div>
+		    <div id="abstract17" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion17">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			This work presents a dataset and annotation scheme for the new task of identifying "good" conversations that occur online, which we call ERICs: Engaging, Respectful, and/or Informative Conversations. We develop a taxonomy to reflect features of entire threads and individual comments which we believe contribute to identifying ERICs; code a novel dataset of Yahoo News comment threads (2.4k threads and 10k comments) and 1k threads from the Internet Argument Corpus; and analyze the features characteristic of ERICs. This is one of the largest annotated corpora of online human dialogues, with the most detailed set of annotations. It will be valuable for identifying ERICs and other aspects of argumentation, dialogue, and discourse.
+		      </div>
+		    </div>
+	  	    <div id="bib17" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion17">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt17">copy</span>
+			<pre id="bt17">
+@InProceedings{napoles-EtAl:2017:LAW,
+    author    = {Napoles, Courtney  and  Tetreault, Joel  and  Pappu, Aasish  and  Rosato, Enrica  and  Provenzale, Brian},
+    title     = {Finding Good Conversations Online: {The Yahoo News Annotated Comments Corpus}},
+    booktitle = {Proceedings of the 11th Linguistic Annotation Workshop},
+    month     = {April},
+    year      = {2017},
+    address   = {Valencia, Spain},
+    publisher = {Association for Computational Linguistics},
+    pages     = {13--23},
+    url       = {http://www.aclweb.org/anthology/W17-0802}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion16" role="tablist" aria-multiselectable="true" onclick="window.location.hash='back'">
+		  <div class="panel panel-default">
+		    <a href="jfleg" id="jfleg"></a>
+		    <a name="jfleg"></a>
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>JFLEG: A Fluency Corpus and Benchmark for Grammatical Error Correction</h4>
+
+		      <!-- AUTHORS -->
+		      Courtney Napoles, Keisuke Sakaguchi, and Joel Tetreault<br/>
+		      Annual Conference of the European Chapter of the Association for Computational Linguistics (EACL)<br/>
+		      2017&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract16" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib16" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/eacl2017-jfleg.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		      <a href="https://github.com/keisks/jfleg" target="_blank"><span class="label label-data">data</span></a>
+		    </div>
+		    <div id="abstract16" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion16">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			We present a new parallel corpus, JHU FLuency-Extended GUG corpus (JFLEG) for developing and evaluating grammatical error correction (GEC). Unlike other corpora, it represents a broad range of language proficiency levels and uses holistic fluency edits to not only correct grammatical errors but also make the original text more native sounding. We describe the types of corrections made and benchmark four leading GEC systems on this corpus, identifying specific areas in which they do well and how they can improve. JFLEG fulfills the need for a new gold standard to properly assess the current state of GEC.
+		      </div>
+		    </div>
+	  	    <div id="bib16" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion16">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt16">copy</span>
+			<pre id="bt16">
+@InProceedings{napoles-sakaguchi-tetreault:2017:EACLshort,
+    author    = {Napoles, Courtney  and  Sakaguchi, Keisuke  and  Tetreault, Joel},
+    title     = {{JFLEG}: A Fluency Corpus and Benchmark for Grammatical Error Correction},
+    booktitle = {Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 2, Short Papers},
+    month     = {April},
+    year      = {2017},
+    address   = {Valencia, Spain},
+    publisher = {Association for Computational Linguistics},
+    pages     = {229--234},
+    url       = {http://www.aclweb.org/anthology/E17-2037}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion15" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>There's No Comparison: Reference-less Evaluation Metrics in Grammatical Error Correction </h4>
+
+		      <!-- AUTHORS -->
+		      Courtney Napoles, Keisuke Sakaguchi, and Joel Tetreault<br/>
+		      Conference on Empirical Methods for Natural Language Processing (EMNLP)<br/>
+		      2016&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract15" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib15" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/emnlp2016-no-comparison.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		      <a href="https://github.com/cnap/grammaticality-metrics" target="_blank"><span class="label label-code">code</span></a>
+		    </div>
+		    <div id="abstract15" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion15">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			Current methods for automatically evaluating grammatical error correction (GEC) systems rely on gold-standard references. However, these methods suffer from penalizing grammatical edits that are correct but not in the gold standard. We show that reference-less grammaticality metrics correlate very strongly with human judgments and are competitive with the leading reference-based evaluation metrics. By interpolating both methods, we achieve state-of-the-art correlation with human judgments. Finally, we show that GEC metrics are much more reliable when they are calculated at the sentence level instead of the corpus level. We have set up a CodaLab site for benchmarking GEC output using a common dataset and different evaluation metrics.
+		      </div>
+		    </div>
+	  	    <div id="bib15" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion15">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt15">copy</span>
+			<pre id="bt15">
+@InProceedings{napoles-sakaguchi-tetreault:2016:EMNLP2016,
+    author    = {Napoles, Courtney  and  Sakaguchi, Keisuke  and  Tetreault, Joel},
+    title     = {There's No Comparison: Reference-less Evaluation Metrics in Grammatical Error Correction},
+    booktitle = {Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing},
+    month     = {November},
+    year      = {2016},
+    address   = {Austin, Texas},
+    publisher = {Association for Computational Linguistics},
+    pages     = {2109--2115},
+    url       = {https://aclweb.org/anthology/D16-1228}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion14" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Reassessing the Goals of Grammatical Error Correction: Fluency Instead of Grammaticality</h4>
+
+		      <!-- AUTHORS -->
+		      Keisuke Sakaguchi, Courtney Napoles, Matt Post, and Joel Tetreault<br/>
+		      Transactions of the Association for Computational Linguistics (TACL)<br/>
+		      2016&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract14" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib14" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/tacl2016-fluency-gec.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		      <a href="https://github.com/keisks/reassess-gec" target="_blank"><span class="label label-data">data</span></a>
+		    </div>
+		    <div id="abstract14" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion14">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			The field of grammatical error correction (GEC) has grown substantially in recent years, with research directed at both evaluation metrics and improved system performance against those metrics. One unvisited assumption, however, is the reliance of GEC evaluation on error-coded corpora, which contain specific labeled corrections. We examine current practices and show that GEC's reliance on such corpora unnaturally constrains annotation and automatic evaluation, resulting in (a) sentences that do not sound acceptable to native speakers and (b) system rankings that do not correlate with human judgments. In light of this, we propose an alternate approach that jettisons costly error coding in favor of unannotated, whole-sentence rewrites. We compare the performance of existing metrics over different gold-standard annotations, and show that automatic evaluation with our new annotation scheme has very strong correlation with expert rankings (rho = 0.82). As a result, we advocate for a fundamental and necessary shift in the goal of GEC, from correcting small, labeled error types, to producing text that has native fluency.
+		      </div>
+		    </div>
+	  	    <div id="bib14" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion14">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt14">copy</span>
+			<pre id="bt14">
+@article{tacl-gec-eval-2016,
+    author   = {Sakaguchi, Keisuke  and Napoles, Courtney  and Post, Matt and Tetreault, Joel },
+    title    = {Reassessing the Goals of Grammatical Error Correction: Fluency Instead of Grammaticality},
+    journal  = {Transactions of the Association for Computational Linguistics},
+    volume   = {4},
+    year     = {2016},
+    issn     = {2307-387X},
+    url      = {https://tacl2013.cs.columbia.edu/ojs/index.php/tacl/article/view/800},
+    pages    = {169--182}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion13" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>A Report on the Automatic Evaluation of Scientific Writing Shared Task</h4>
+
+		      <!-- AUTHORS -->
+		      Vidas Daudaravicius, Rafael E. Banchs, Elena Volodina, and Courtney Napoles<br/>
+		      11th Workshop on Innovative Use of NLP for Building Educational Applications (BEA11)<br/>
+		      2016&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract13" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib13" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/aesw2016-report.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		      <a href="http://textmining.lt/aesw/aesw2016down.html" target="_blank"><span class="label label-data">data</span></a>
+		    </div>
+		    <div id="abstract13" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion13">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			The Automated Evaluation of Scientific Writing, or AESW, is the task of identifying sentences in need of correction to ensure their appropriateness in a scientific prose. The data set comes from a professional editing company, VTeX, with two aligned versions of the same text&mdash;before and after editing&mdash;and covers a variety of textual infelicities that proofreaders have edited. While previous shared tasks focused solely on grammatical errors (Dale and Kilgarriff, 2011; Dale et al., 2012; Ng et al., 2013; Ng et al., 2014), this time edits cover other types of linguistic misfits as well, including those that almost certainly could be interpreted as style issues and similar “matters of opinion”. The latter arise because of different language editing traditions, experience, and the absence of uniform agreement on what “good” scientific language should look like. Initiating this task, we expected the participating teams to help identify the characteristics of “good” scientific language, and help create a consensus of which language improvements are acceptable (or necessary). Six participating teams took on the challenge.
+		      </div>
+		    </div>
+	  	    <div id="bib13" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion13">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt13">copy</span>
+			<pre id="bt13">
+@InProceedings{daudaravicius-EtAl:2016:BEA11,
+    author    = {Daudaravicius, Vidas  and  Banchs, Rafael E.  and  Volodina, Elena  and  Napoles, Courtney},
+    title     = {A Report on the Automatic Evaluation of Scientific Writing Shared Task},
+    booktitle = {Proceedings of the 11th Workshop on Innovative Use of NLP for Building Educational Applications},
+    month     = {June},
+    year      = {2016},
+    address   = {San Diego, CA},
+    publisher = {Association for Computational Linguistics},
+    pages     = {53--62},
+    url       = {http://www.aclweb.org/anthology/W16-0506}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion12" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>The Effect of Multiple Grammatical Errors on Processing Non-Native Writing </h4>
+
+		      <!-- AUTHORS -->
+		      Courtney Napoles, Aoife Cahill, and Nitin Madnani<br/>
+		      11th Workshop on Innovative Use of NLP for Building Educational Applications (BEA11)<br/>
+		      2016&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract12" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib12" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/bea2016-effect.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		      <a href="https://github.com/cnap/ungrammatical-dependencies" target="_blank"><span class="label label-code">code</span></a>
+		    </div>
+		    <div id="abstract12" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion12">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			In this work, we estimate the deterioration of NLP processing given an estimate of the amount and nature of grammatical errors in a text. From a corpus of essays written by English-language learners, we extract ungrammatical sentences, controlling the number and types of errors in each sentence. We focus on six categories of errors that are commonly made by English-language learners, and consider sentences containing one or more of these errors. To evaluate the effect of grammatical errors, we measure the deterioration of ungrammatical dependency parses using the labeled F-score, an adaptation of the labeled attachment score. We find notable differences between the influence of individual error types on the dependency parse, as well as interactions between multiple errors.
+		      </div>
+		    </div>
+	  	    <div id="bib12" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion12">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt12">copy</span>
+			<pre id="bt12">
+@InProceedings{napoles-cahill-madnani:2016:BEA11,
+    author    = {Napoles, Courtney  and  Cahill, Aoife  and  Madnani, Nitin},
+    title     = {The Effect of Multiple Grammatical Errors on Processing Non-Native Writing},
+    booktitle = {Proceedings of the 11th Workshop on Innovative Use of NLP for Building Educational Applications},
+    month     = {June},
+    year      = {2016},
+    address   = {San Diego, CA},
+    publisher = {Association for Computational Linguistics},
+    pages     = {1--11},
+    url       = {http://www.aclweb.org/anthology/W16-0501}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion11" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Sentential Paraphrasing as Black-Box Machine Translation</h4>
+
+		      <!-- AUTHORS -->
+		      Courtney Napoles, Chris Callison-Burch, and Matt Post<br/>
+		      Demonstration at the 2016 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL)<br/>
+		      2016&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract11" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib11" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/naacl2016-paraphrase-demo.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		      <a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=65142863" target="_blank"><span class="label label-data">data</span></a>
+		    </div>
+		    <div id="abstract11" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion11">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			We present a simple, prepackaged solution to generating paraphrases of English sentences. We use the Paraphrase Database (PPDB) for monolingual sentence rewriting and provide machine translation language packs: prepackaged, tuned models that can be downloaded and used to generate paraphrases on a standard Unix environment. The language packs can be treated as a black box or customized to specific tasks. In this demonstration, we will explain how to use the included interactive web-based tool to generate sentential paraphrases.
+		      </div>
+		    </div>
+	  	    <div id="bib11" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion11">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt11">copy</span>
+			<pre id="bt11">
+@InProceedings{napoles-callisonburch-post:2016:N16-3,
+    author    = {Napoles, Courtney  and  Callison-Burch, Chris  and  Post, Matt},
+    title     = {Sentential Paraphrasing as Black-Box Machine Translation},
+    booktitle = {Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Demonstrations},
+    month     = {June},
+    year      = {2016},
+    address   = {San Diego, California},
+    publisher = {Association for Computational Linguistics},
+    pages     = {62--66},
+    url       = {http://www.aclweb.org/anthology/N16-3013}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion10" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Optimizing Statistical Machine Translation for Text Simplification </h4>
+
+		      <!-- AUTHORS -->
+		      Wei Xu, Courtney Napoles, Ellie Pavlick, Quanze Chen, and Chris Callison-Burch<br/>
+		      Transactions of the Association for Computational Linguistics (TACL)<br/>
+		      2016&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract10" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib10" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/tacl2016-optimizing.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		    </div>
+		    <div id="abstract10" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion10">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			Most recent sentence simplification systems use basic machine translation models to learn lexical and syntactic paraphrases from a manually simplified parallel corpus. These methods are limited by the quality and quantity of manually simplified corpora, which are expensive to build. In this paper, we conduct an in-depth adaptation of statistical machine translation to perform text simplification, taking advantage of large-scale paraphrases learned from bilingual texts and a small amount of manual simplifications with multiple references. Our work is the first to design automatic metrics that are effective for tuning and evaluating simplification systems, which will facilitate iterative development for this task.
+		      </div>
+		    </div>
+	  	    <div id="bib10" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion10">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt10">copy</span>
+			<pre id="bt10">
+@article{xu2016optimizing,
+    author  = {Xu, Wei  and Napoles, Courtney  and Pavlick, Ellie  and Chen, Quanze  and Callison-Burch, Chris },
+    title   = {Optimizing Statistical Machine Translation for Text Simplification},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume  = {4},
+    year    = {2016},
+    issn    = {2307-387X},
+    url     = {https://transacl.org/ojs/index.php/tacl/article/view/741},
+    pages   = {401--415}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+
+		<div class="panel-group" id="accordion9" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Ground Truth for Grammatical Error Correction Metrics</h4>
+		      Courtney Napoles, Keisuke Sakaguchi, Matt Post, and Joel Tetreault<br/>
+		      53rd Annual Meeting of the Association for Computational Linguistics (ACL)<br/>
+		      2015&nbsp;&nbsp;
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract9" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib9" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/acl2015-groundtruth.pdf" target="_blank"> <span class="label label-pdf">pdf</span></a>
+	              <a href="https://github.com/cnap/gec-ranking/" target="_blank"><span class="label label-code">code</span></a>
+		    </div>
+
+		    <div id="abstract9" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion9">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			How do we know which grammatical error correction (GEC) system is best? A number of metrics have been proposed over the years, each motivated by weaknesses of previous metrics; however, the metrics themselves have not been compared to an empirical gold standard grounded in human judgments. We conducted the first human evaluation of GEC system outputs, and show that the rankings produced by metrics such as MaxMatch and I-measure do not correlate well with this ground truth. As a step towards better metrics, we also propose GLEU, a simple variant of BLEU, modified to account for both the source and the reference, and show that it hews much more closely to human judgments.
+		      </div>
+		    </div>
+		    <div id="bib9" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion9">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt9">copy</span>
+			<pre id="bt9">
+@InProceedings{napoles-EtAl:2015:ACL-IJCNLP,
+    author    = {Napoles, Courtney  and  Sakaguchi, Keisuke  and  Post, Matt  and  Tetreault, Joel},
+    title     = {Ground Truth for Grammatical Error Correction Metrics},
+    booktitle = {Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 2: Short Pape  },
+    month     = {July},
+    year      = {2015},
+    address   = {Beijing, China},
+    publisher = {Association for Computational Linguistics},
+    pages     = {588--593},
+    url       = {http://www.aclweb.org/anthology/P15-2097}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion8" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Automatically Scoring Freshman Writing: A Preliminary Investigation</h4>
+
+		      <!-- AUTHORS -->
+		      Courtney Napoles and Chris Callison-Burch<br/>
+		      10th Workshop on Innovative Use of NLP for Building Educational Applications (BEA10)<br/>
+		      2015&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract8" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib8" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/bea2015-automatically.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		    </div>
+		    <div id="abstract8" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion8">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			In this work, we explore applications of automatic essay scoring (AES) to a corpus of essays written by college freshmen and discuss the challenges we faced. While most AES systems evaluate highly constrained writing, we developed a system that handles open-ended, long-form writing. We present a novel corpus for this task, containing more than 3,000 essays and drafts written for a freshman writing course. We describe statistical analysis of the corpus and identify problems with automatically scoring this type of data. Finally, we demonstrate how to overcome grader bias by using a multi-task setup, and predict scores as well as human graders on a different dataset. Finally, we discuss how AES can help teachers assign more uniform grades.
+		      </div>
+		    </div>
+		    <div id="bib8" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion8">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt8">copy</span>
+			<pre id="bt8">
+@InProceedings{napoles-callisonburch:2015:bea,
+    author    = {Napoles, Courtney  and  Callison-Burch, Chris},
+    title     = {Automatically Scoring Freshman Writing: A Preliminary Investigation},
+    booktitle = {Proceedings of the Tenth Workshop on Innovative Use of NLP for Building Educational Applications},
+    month     = {June},
+    year      = {2015},
+    address   = {Denver, Colorado},
+    publisher = {Association for Computational Linguistics},
+    pages     = {254--263},
+    url       = {http://www.aclweb.org/anthology/W15-0629}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion7" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Problems in Current Text Simplification Research: New Data Can Help</h4>
+
+		      <!-- AUTHORS -->
+		      Wei Xu, Chris Callison-Burch, and Courtney Napoles<br/>
+		      Transactions of the Association for Computational Linguistics (TACL)<br/>
+		      2015&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract7" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib7" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/tacl2015-problems.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		    </div>
+		    <div id="abstract7" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion7">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			Simple Wikipedia has dominated simplification research in the past 5 years. In this opinion paper, we argue that focusing on Wikipedia limits simplification research. We back up our arguments with corpus analysis and by highlighting statements that other researchers have made in the simplification literature. We introduce a new simplification dataset that is a significant improvement over Simple Wikipedia, and present a novel quantitative-comparative approach to study the quality of simplification data resources.
+		      </div>
+		    </div>
+		    <div id="bib7" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion7">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt7">copy</span>
+			<pre id="bt7">
+@article{xu2015problems,
+    author  = {Xu, Wei  and Callison-Burch, Chris  and Napoles, Courtney },
+    title   = {Problems in Current Text Simplification Research: New Data Can Help},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume  = {3},
+    year    = {2015},
+    issn    = {2307-387X},
+    url     = {https://transacl.org/ojs/index.php/tacl/article/view/549},
+    pages   = {283--297}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion5" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Annotated Gigaword</h4>
+
+		      <!-- AUTHORS -->
+		      Courtney Napoles, Matt Gormley, and Benjamin Van Durme<br/>
+		      Joint Workshop on Automatic Knowledge Base Construction and Web-scale Knowledge Extraction (AKBC-WEKEX)<br/>
+		      2012&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract5" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib5" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/annotated-gigaword-2012.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		      <a href="https://catalog.ldc.upenn.edu/ldc2012t21" target="_blank"><span class="label label-data">data</span></a>
+		      <a href="https://github.com/mgormley/agiga" target="_blank"><span class="label label-code">code</span></a>
+		    </div>
+		    <div id="abstract5" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion5">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			We have created layers of annotation on the English Gigaword v.5 corpus to render it useful as a standardized corpus for knowledge extraction and distributional semantics. Most existing large-scale work is based on inconsistent corpora which often have needed to be re-annotated by research teams independently, each time introducing biases that manifest as results that are only comparable at a high level. We provide to the community a public reference set based on current state-of-the-art syntactic analysis and coreference resolution, along with an interface for programmatic access. Our goal is to enable broader involvement in large-scale knowledge-acquisition efforts by researchers that otherwise may not have had the ability to produce such a resource on their own.
+		      </div>
+		    </div>
+		    <div id="bib5" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion5">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt5">copy</span>
+			<pre id="bt5">
+@InProceedings{napoles-gormley-vandurme:2012:AKBC-WEKEX,
+    author    = {Napoles, Courtney  and  Gormley, Matthew  and  Van Durme, Benjamin},
+    title     = {Annotated {G}igaword},
+    booktitle = {Proceedings of the Joint Workshop on Automatic Knowledge Base Construction and Web-scale Knowledge Extraction (AKBC-WEKEX)},
+    month     = {June},
+    year      = {2012},
+    address   = {Montr{\'e}al, Canada},
+    publisher = {Association for Computational Linguistics},
+    pages     = {95--100},
+    url       = {http://www.aclweb.org/anthology/W12-3018}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Learning Sentential Paraphrases from Bilingual Parallel Corpora for Text-to-Text Generation</h4>
+
+		      <!-- AUTHORS -->
+		      Juri Ganitkevitch, Chris Callison-Burch, Courtney Napoles, and Benjamin Van Durme<br/>
+		      Conference on Empirical Methods in Natural Language Processing (EMNLP)<br/>
+		      2011&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract4" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib4" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/emnlp2011-learning.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		    </div>
+		    <div id="abstract4" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion4">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			Previous work has shown that high quality phrasal paraphrases can be extracted from bilingual parallel corpora. However, it is not clear whether bitexts are an appropriate resource for extracting more sophisticated sentential paraphrases, which are more obviously learnable from monolingual parallel corpora. We extend bilingual paraphrase extraction to syntactic paraphrases and demonstrate its ability to learn a variety of general paraphrastic transformations, including passivization, dative shift, and topicalization. We discuss how our model can be adapted to many text generation tasks by augmenting its feature set, development data, and parameter estimation routine. We illustrate this adaptation by using our paraphrase model for the task of sentence compression and achieve results competitive with state-of-the-art compression systems.
+		      </div>
+		    </div>
+		    <div id="bib4" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion4">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt4">copy</span>
+			<pre id="bt4">
+@InProceedings{ganitkevitch-EtAl:2011:EMNLP,
+    author    = {Ganitkevitch, Juri  and  Callison-Burch, Chris  and  Napoles, Courtney  and  Van Durme, Benjamin},
+    title     = {Learning Sentential Paraphrases from Bilingual Parallel Corpora for Text-to-Text Generation},
+    booktitle = {Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing},
+    month     = {July},
+    year      = {2011},
+    address   = {Edinburgh, Scotland, UK.},
+    publisher = {Association for Computational Linguistics},
+    pages     = {1168--1179},
+    url       = {http://www.aclweb.org/anthology/D11-1108}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Evaluating Sentence Compression: Pitfalls and Suggested Remedies</h4>
+
+		      <!-- AUTHORS -->
+		      Courtney Napoles, Benjamin Van Durme, and Chris Callison-Burch<br/>
+		      Workshop on Monolingual Text-To-Text Generation<br/>
+		      2011&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract3" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib3" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/evaluating-compression-2011.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		    </div>
+		    <div id="abstract3" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion3">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			This work surveys existing evaluation methodologies for the task of sentence compression, identifies their shortcomings, and proposes alternatives. In particular, we examine the problems of evaluating paraphrastic compression and comparing the output of different models. We demonstrate that compression rate is a strong predictor of compression quality and that perceived improvement over other models is often a side effect of producing longer output.
+		      </div>
+		    </div>
+		    <div id="bib3" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion3">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt3">copy</span>
+			<pre id="bt3">
+@InProceedings{napoles-vandurme-callisonburch:2011:T2TW-2011,
+    author    = {Napoles, Courtney  and  Van Durme, Benjamin  and  Callison-Burch, Chris},
+    title     = {Evaluating Sentence Compression: Pitfalls and Suggested Remedies},
+    booktitle = {Proceedings of the Workshop on Monolingual Text-To-Text Generation},
+    month     = {June},
+    year      = {2011},
+    address   = {Portland, Oregon},
+    publisher = {Association for Computational Linguistics},
+    pages     = {91--97},
+    url       = {http://www.aclweb.org/anthology/W11-1611}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Paraphrastic Sentence Compression with a Character-based Metric: Tightening without Deletion</h4>
+
+		      <!-- AUTHORS -->
+		      Courtney Napoles, Chris Callison-Burch, Juri Ganitkevitch, and Benjamin Van Durme<br/>
+		      Workshop on Monolingual Text-To-Text Generation<br/>
+		      2011&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract2" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib2" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/paraphrastic-compression-2011.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		    </div>
+		    <div id="abstract2" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			We present a substitution-only approach to sentence compression which “tightens” a sentence by reducing its character length. Replacing phrases with shorter paraphrases yields paraphrastic compressions as short as 60% of the original length. In support of this task, we introduce a novel technique for re-ranking paraphrases extracted from bilingual corpora. At high compression rates, paraphrastic compressions outperform a state-of-the-art deletion model in an oracle experiment. For further compression, deleting from oracle paraphrastic compressions preserves more meaning than deletion alone. In either setting, paraphrastic compression shows promise for surpassing deletion-only methods.
+		      </div>
+		    </div>
+		    <div id="bib2" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion2">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt2">copy</span>
+			<pre id="bt2">
+@InProceedings{napoles-EtAl:2011:T2TW-2011,
+    author    = {Napoles, Courtney  and  Callison-Burch, Chris  and  Ganitkevitch, Juri  and  Van Durme, Benjamin},
+    title     = {Paraphrastic Sentence Compression with a Character-based Metric: Tightening without Deletion},
+    booktitle = {Proceedings of the Workshop on Monolingual Text-To-Text Generation},
+    month     = {June},
+    year      = {2011},
+    address   = {Portland, Oregon},
+    publisher = {Association for Computational Linguistics},
+    pages     = {84--90},
+    url       = {http://www.aclweb.org/anthology/W11-1610}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->
+
+		<!-- START PUB -->
+		<div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <!-- TITLE -->
+		      <h4>Learning Simple Wikipedia: A Cogitation in Ascertaining Abecedarian Language</h4>
+
+		      <!-- AUTHORS -->
+		      Courtney Napoles and Mark Dredze<br/>
+		      NAACL-HLT 2010 Workshop on Computational Linguistics and Writing<br/>
+		      2010&nbsp;&nbsp;
+
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract1" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib1" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/simple-wikipedia-2010.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		    </div>
+		    <div id="abstract1" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion1">
+		      <div class="panel-body">
+			<!-- ABSTRACT -->
+			Text simplification is the process of changing vocabulary and grammatical structure to create a more accessible version of the text while maintaining the underlying information and content. Automated tools for text simplification are a practical way to make large corpora of text accessible to a wider audience lacking high levels of fluency in the corpus language. In this work, we investigate the potential of Simple Wikipedia to assist automatic text simplification by building a statistical classification system that discriminates simple English from ordinary English. Most text simplification systems are based on hand-written rules (e.g., PEST (Carroll et al., 1999) and its module SYSTAR (Canning et al., 2000)), and therefore face limitations scaling and transferring across domains. The potential for using Simple Wikipedia for text simplification is significant; it contains nearly 60,000 articles with revision histories and aligned articles to ordinary English Wikipedia. Using articles from Simple Wikipedia and ordinary Wikipedia, we evaluated different classifiers and feature sets to identify the most discriminative features of simple English for use across domains. These findings help further understanding of what makes text simple and can be applied as a tool to help writers craft simple text.
+		      </div>
+		    </div>
+		    <div id="bib1" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion1">
+		      <div class="panel-body" style="border-top:1px solid #ddd">
+			<!-- BIB -->
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt1">copy</span>
+			<pre id="bt1">
+@InProceedings{napoles-dredze:2010:CLW,
+    author    = {Napoles, Courtney  and  Dredze, Mark},
+    title     = {Learning {Simple Wikipedia}: A Cogitation in Ascertaining Abecedarian Language},
+    booktitle = {Proceedings of the NAACL HLT 2010 Workshop on Computational Linguistics and Writing: Writing Processes and Authoring Aids},
+    month     = {June},
+    year      = {2010},
+    address   = {Los Angeles, CA, USA},
+    publisher = {Association for Computational Linguistics},
+    pages     = {42--50},
+    url       = {http://www.aclweb.org/anthology/W10-0406}
+}</pre>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- END PUB -->						</div></article>
+	  </main>
+	</div>
+      </div>
+    </div>
+    <footer id="site-footer">
+      <div class="container">
+	<div class="row">
+	  <div class="col-md-12">
+	    <p class="copyright">
+	      <center>
+		<a href="http://github.com/cnap" target="_blank">
+		  <i class="fa fa-github" style="font-size:30px"></i></a>&nbsp;&nbsp;
+		<a href="http://www.linkedin.com/in/cnapoles" target="_blank">
+		  <i class="fa fa-linkedin-square" style="font-size:30px"></i></a>&nbsp;&nbsp;
+		<a href="https://twitter.com/courtnap" target="_blank">
+		  <i class="fa fa-twitter" style="font-size:30px"></i></a>
+	      </center>
+	    </p>
+	  </div>
+	</div>
+      </div>
+    </footer>
+    <!-- Mobile Menu -->
+    <div class="overlay overlay-hugeinc">
+      <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
+      <nav>
+	<ul>
+
+	  <li><a href="index.html">Home</a></li>
+	  <li><a href="publications.html">Publications</a></li>
+	  <li><a href="cv.html">CV</a></li>
+	  <li><a href="contact.html">Contact</a></li>
+	</ul>
+      </nav>
+    </div>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
