@@ -97,7 +97,38 @@
 	    <h1 class="page-title">Publications</h1>
 	    <article class="post">
 	      <div class="entry-content clearfix">
-		<div class="panel-group" id="accordion21" role="tablist" aria-multiselectable="true">
+
+		<div class="panel-group" id="accordion22" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default"><div class="panel-heading" role="tab" id="headingOne">
+		      <h4>Enabling Robust Grammatical Error Correction in New Domains: Data Sets, Metrics, and Analyses</h4>
+		      Courtney Napoles, Maria Nadejde, and Joel Tetreault<br/>
+		      Transactions of the Association for Computational Linguistics (TACL)<br/>
+		      2019&nbsp;&nbsp;
+		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract22" aria-expanded="false" aria-controls="collapseOne">abstract</span>
+		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib22" aria-expanded="false" aria-controls="collapseO">cite</span>
+		      <a href="res/tacl2019-enabling.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
+		      <a href="https://github.com/grammarly/gmeg" target="_blank"><span class="label label-data">data</span></a>
+		    </div>
+		    <div id="abstract22" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion22"><div class="panel-body">
+Until now, grammatical error correction (GEC) has been primarily evaluated on text written by non-native English speakers, with a focus on student essays. This paper enables GEC development on text written by native speakers by providing a new data set and metric. We present a multiple-reference test corpus for GEC that includes 4,000 sentences in two new domains (formal and informal writing by native English speakers) and 2,000 sentences from a diverse set of non-native student writing. We also collect human judgments of several GEC systems on this new test set and perform a meta-evaluation, assessing how reliable automatic metrics are across these domains. We find that commonly used GEC metrics have inconsistent performance across domains, and therefore we propose a new ensemble metric that is robust on all three domains of text.
+		    </div></div>
+		    <div id="bib22" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion22"><div class="panel-body" style="border-top:1px solid #ddd">
+			<span class="label label-default copy" role="button" data-clipboard-target="#bt22">copy</span>
+			<pre id="bt22">@article{napoles-EtAl:2019:TACL,
+    author  = {Napoles, Courtney and Nadejde, Maria and Tetreault, Joel},
+    title   = {Enabling Robust Grammatical Error Correction in New Domains: Data Sets, Metrics, and Analyses},
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume  = {7},
+    pages   = {551--566},
+    year    = {2019},
+    doi     = {10.1162/tacl_a_00282},
+    URL     = {https://doi.org/10.1162/tacl_a_00282},
+}</pre>
+		</div></div></div></div>
+
+
+
+			<div class="panel-group" id="accordion21" role="tablist" aria-multiselectable="true">
 		  <div class="panel panel-default"><div class="panel-heading" role="tab" id="headingOne">
 		      <h4>How do you correct run-on sentences it's not as easy as it seems
 		      </h4>
@@ -107,7 +138,6 @@
 		      <span class="label label-abs collapsed" role="button" data-toggle="collapse" href="#abstract21" aria-expanded="false" aria-controls="collapseOne">abstract</span>
 		      <span class="label label-cite collapsed" role="button" data-toggle="collapse" href="#bib21" aria-expanded="false" aria-controls="collapseO">cite</span>
 		      <a href="res/wnut2018-run-ons.pdf" target="_blank"><span class="label label-pdf">pdf</span></a>
-		      <a href="https://github.com/cnap/smt-for-gec" target="_blank"><span class="label label-code">code</span></a>
 		    </div>
 		    <div id="abstract21" class="panel-collapse collapse" aria-labelledby="headingOne" data-parent="#accordion21"><div class="panel-body">
 			Run-on sentences are common grammatical mistakes but little research has tackled this problem to date. This work introduces two machine learning models to correct run-on sentences that outperform leading methods for related tasks, punctuation restoration and wholesentence grammatical error correction. Due to the limited annotated data for this error, we experiment with artificially generating training data from clean newswire text. Our findings suggest artificial training data is viable for this task. We discuss implications for correcting run-ons and other types of mistakes that have low coverage in error-annotated corpora.
